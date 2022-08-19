@@ -12,7 +12,7 @@ I've been Working on this assigments that has been given by our mentor [Hitesh C
 - CSS 3 Properties and usages of position 
   
 ## Estimated time I took to complete this
-    - two and a half hour
+    - only blog article section took two and a half hour itself in total 7 hours.
 
 ## _Here Is What I'm Working On👨‍💻_
 

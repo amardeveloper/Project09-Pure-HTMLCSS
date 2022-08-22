@@ -10,6 +10,7 @@
 
 body {
   background-color: #e1fcfb;
+  min-width: 599px;
 }
 
 nav {
@@ -48,6 +49,7 @@ header {
 }
 
 .header-text {
+  float: left;
   margin-top: 100px;
 }
 
@@ -65,9 +67,7 @@ header {
 }
 
 .header-image {
-  position: absolute;
-  top: 60px;
-  left: 613px;
+  float: right;
   width: 650px;
   height: 500px;
 }
@@ -266,6 +266,7 @@ h6 {
   cursor: pointer;
 }
 
+
 .footer-section {
   display: flex;
   justify-content: space-between;
@@ -350,4 +351,254 @@ h6 {
   width: 15%;
   margin-bottom: 1.2rem;
   margin-left: 1rem;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  
+nav {
+  display: none;
+}
+
+nav > a,
+svg {
+  margin-left: 1.5em;
+  margin-top: 1em;
+}
+
+nav a:nth-child(-n + 1) {
+  margin-left: 690px;
+}
+
+.nav-item-active {
+  background-color: white;
+  color: blue;
+  font-weight: bold;
+  padding: 4px opx 4px 10px;
+  border-radius: 4px;
+}
+
+header {
+  background-color: blue;
+  padding-left: 3em;
+  color: white;
+  height: 450px;
+  width: 100%;
+}
+
+.header-text {
+  margin-top: 100px;
+  float: left;
+}
+
+.header-text img {
+  margin-bottom: 5px;
+}
+
+.header-text h2 {
+  font-size: 30px;
+}
+
+.header-text p {
+  margin-top: 5px;
+  font-size: 17px;
+}
+
+
+
+.companies {
+  padding: 2em 0em 0em 3em;
+  width: 100%;
+}
+
+.company-items {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-right: 3em;
+}
+
+.api {
+  padding: 5em 0em 0em 3em;
+  width: 100%;
+}
+.api-heading {
+  font-weight: 900;
+  margin-bottom: 2rem;
+  width: 50%;
+  margin: auto;
+  text-align: left;
+  
+  
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  justify-content: center;
+  background-color: #e1fcfb;
+}
+
+.cards > div {
+  width: 50%;
+  margin: auto;
+  padding: 1.5em 1em;
+  border-radius: 8px;
+}
+
+.card-active {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 3px -1px 5px #afadad;
+  width: 20%;
+}
+
+.cards > div > p {
+  font-size: 12px;
+}
+
+.blog-heading {
+  margin: 4em 0em 0em 3em;
+  width: 100%;
+  text-align: left;
+}
+
+.blog-cards {
+  
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-grow: 14.5em;
+  border-top-right-radius: 25px;
+}
+
+.blog-card {
+  display: flex;
+  padding-left: 3em;
+  margin: auto;
+}
+
+.blog-content {
+  background-color: white;
+  padding: 1.5em;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 250px;
+  height: 240px;
+}
+
+
+
+.faq-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  background-color: #ead4fa;
+  margin-top: 4em;
+  margin: auto;
+}
+
+.faq-content {
+  align-items: center;
+  margin: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.faq-image {
+  align-items: center;
+  margin: auto;
+  padding-top: 2em;
+}
+
+
+.faq-content h2:first-child {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.faq-content h4:nth-child(2) {
+  font-size: 0.8rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+}
+
+.faq-content h4:nth-child(3) {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.faq-content button:nth-child(4) {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: blue;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.download-section {
+  padding: 5rem 0rem 5rem 3rem;
+  display: flex;
+  height: 20vh;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+
+
+
+
+.footer-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: blue;
+  padding: 5rem 0rem 5rem 3rem;
+}
+
+.list {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-logo {
+  
+  margin-bottom: 0.8rem;
+  width: 25%;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-left .list-items {
+  list-style: none;
+  color: #fff;
+  font-size: 1rem;
+  position: relative;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+
+
+
+.footer-right .list-items {
+  list-style: none;
+  color: #fff;
+  font-size: 1rem;
+  position: relative;
+  padding-right: 1rem;
+  text-align: center;
+}
+
 }

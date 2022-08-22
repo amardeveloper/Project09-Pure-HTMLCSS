@@ -10,7 +10,7 @@
 
 body {
   background-color: #e1fcfb;
-  min-width: 485px;
+  min-width: 599px;
 }
 
 nav {
@@ -355,10 +355,28 @@ h6 {
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   
 nav {
   display: none;
+}
+
+nav > a,
+svg {
+  margin-left: 1.5em;
+  margin-top: 1em;
+}
+
+nav a:nth-child(-n + 1) {
+  margin-left: 690px;
+}
+
+.nav-item-active {
+  background-color: white;
+  color: blue;
+  font-weight: bold;
+  padding: 4px opx 4px 10px;
+  border-radius: 4px;
 }
 
 header {
@@ -450,7 +468,6 @@ header {
 .blog-cards {
   
   margin-top: 2em;
-  margin-bottom: 2em;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -462,7 +479,6 @@ header {
   display: flex;
   padding-left: 3em;
   margin: auto;
-  margin-bottom: 2em;
 }
 
 .blog-content {
@@ -488,14 +504,14 @@ header {
 
 .faq-content {
   align-items: center;
-  
+  margin: auto;
   padding-top: 2em;
   padding-bottom: 2em;
 }
 
 .faq-image {
   align-items: center;
-  
+  margin: auto;
   padding-top: 2em;
 }
 
